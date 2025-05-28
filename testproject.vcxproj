@@ -123,34 +123,35 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Calculator.cpp" />
-    <ClCompile Include="Car.cpp" />
-    <ClCompile Include="Circle.cpp" />
-    <ClCompile Include="CPoint.cpp" />
-    <ClCompile Include="FruitBuyer.cpp" />
-    <ClCompile Include="FruitSeller.cpp" />
-    <ClCompile Include="mainLoop.cpp" />
-    <ClCompile Include="Point.cpp" />
-    <ClCompile Include="Printer.cpp" />
-    <ClCompile Include="Rectangle.cpp" />
-    <ClCompile Include="Ring.cpp" />
-    <ClCompile Include="SecCar.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Calculator.h" />
-    <ClInclude Include="Car.h" />
-    <ClInclude Include="Circle.h" />
-    <ClInclude Include="CPoint.h" />
-    <ClInclude Include="FruitBuyer.h" />
-    <ClInclude Include="FruitSeller.h" />
-    <ClInclude Include="Point.h" />
-    <ClInclude Include="Printer.h" />
-    <ClInclude Include="Rectangle.h" />
-    <ClInclude Include="Ring.h" />
-    <ClInclude Include="SecCar.h" />
-  </ItemGroup>
-  <ItemGroup>
     <Text Include="solvedProblem.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="sourceFiles\header\Calculator.h" />
+    <ClInclude Include="sourceFiles\header\Car.h" />
+    <ClInclude Include="sourceFiles\header\Circle.h" />
+    <ClInclude Include="sourceFiles\header\CPoint.h" />
+    <ClInclude Include="sourceFiles\header\FruitBuyer.h" />
+    <ClInclude Include="sourceFiles\header\FruitSeller.h" />
+    <ClInclude Include="sourceFiles\header\Point.h" />
+    <ClInclude Include="sourceFiles\header\Printer.h" />
+    <ClInclude Include="sourceFiles\header\ProblemOne.h" />
+    <ClInclude Include="sourceFiles\header\Rectangle.h" />
+    <ClInclude Include="sourceFiles\header\Ring.h" />
+    <ClInclude Include="sourceFiles\header\SecCar.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="sourceFiles\Calculator.cpp" />
+    <ClCompile Include="sourceFiles\Car.cpp" />
+    <ClCompile Include="sourceFiles\Circle.cpp" />
+    <ClCompile Include="sourceFiles\CPoint.cpp" />
+    <ClCompile Include="sourceFiles\FruitBuyer.cpp" />
+    <ClCompile Include="sourceFiles\FruitSeller.cpp" />
+    <ClCompile Include="sourceFiles\mainLoop.cpp" />
+    <ClCompile Include="sourceFiles\Point.cpp" />
+    <ClCompile Include="sourceFiles\Printer.cpp" />
+    <ClCompile Include="sourceFiles\Rectangle.cpp" />
+    <ClCompile Include="sourceFiles\Ring.cpp" />
+    <ClCompile Include="sourceFiles\SecCar.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

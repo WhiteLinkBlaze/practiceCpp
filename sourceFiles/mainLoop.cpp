@@ -1,14 +1,14 @@
 
 #pragma warning(disable:4996)
 #include <iostream>
-#include "SecCar.h"
-#include "Point.h"
-#include "Calculator.h"
-#include "Printer.h"
-#include "FruitSeller.h"
-#include "FruitBuyer.h"
-#include "Rectangle.h"
-#include "Ring.h"
+#include "header\\SecCar.h"
+#include "header\\Point.h"
+#include "header\\Calculator.h"
+#include "header\\Printer.h"
+#include "header\\FruitSeller.h"
+#include "header\\FruitBuyer.h"
+#include "header\\Rectangle.h"
+#include "header\\Ring.h"
 
 #pragma warning(disable:4996)
 using namespace std;
