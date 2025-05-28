@@ -1,0 +1,61 @@
+#include <cstring>
+#include <cstdlib>
+#include <ctime>
+#include "Car.h"
+void secondProblem() {
+	const int num = 12;
+	const int* ptr = &num;
+	const int* (&pref) = ptr;
+
+	std::cout << num << std::endl;
+	std::cout << *ptr << std::endl;
+	std::cout << *pref << std::endl;
+}
+//typedef struct __Point
+//{
+//	int xpos;
+//	int ypos;
+//}Point;
+
+Point& PntAdder(const Point& p1, const Point& p2)
+{
+	Point *tmpP = new Point;
+	tmpP->xpos= p1.xpos + p2.xpos;
+	tmpP->ypos = p1.ypos + p2.ypos;
+	return *tmpP;
+}
+void thirdProblem() {
+	Point* p1 = new Point; p1->xpos = 10; p1->ypos = 20;
+	Point* p2 = new Point; p2->xpos = 20; p2->ypos = 10;
+	Point& ptr = PntAdder(*p1, *p2);
+
+	cout << ptr.xpos << ptr.ypos << endl;
+
+	delete p1;
+	delete p2;
+	delete& ptr;
+}
+void forthProblem() {
+	char charlist[10] = "test";
+	char charlist2[10] = "aaaa";
+	cout << strlen("testt") << endl;
+	cout << strcat(charlist, charlist2) << endl;
+	cout << strcpy(charlist, charlist2) << endl;
+	cout << strcmp(charlist, charlist2) << endl;
+}
+void fifthProblem()
+{
+	srand(time(NULL));
+	for (int i = 0; i < 5; i++)
+	{
+		cout << rand() % 100 << endl;
+	}
+}
+void sixthProblem()
+{
+	Car car = { "run99",100,0 };
+	car.Accel();
+	car.Accel();
+	car.Break();
+	car.ShowCarState();
+}
