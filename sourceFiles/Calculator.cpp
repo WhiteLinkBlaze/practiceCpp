@@ -38,8 +38,8 @@ double Calculator::Mult(double num1, double num2)
 
 void Calculator::ShowOpCount()
 {
-	cout << "µ¡¼À: " << count_add
-		<< " »¬¼À: " << count_min
-		<< " °ö¼À: " << count_mult
-		<< " ³ª´°¼À: " << count_div << endl;
+	cout << "ë”í•˜ê¸°: " << count_add
+		<< " ë¹¼ê¸°: " << count_min
+		<< " ê³±í•˜ê¸°: " << count_mult
+		<< " ë‚˜ëˆ„ê¸°: " << count_div << endl;
 }

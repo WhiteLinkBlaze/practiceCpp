@@ -8,7 +8,7 @@ bool Circle::InitMembers(const CPoint& position, int r)
 {
 	
 	if (r < 0) {
-		cout << "[CIRCLE] Àß¸øµÈ ¼öÄ¡ÀÔ´Ï´Ù."<< endl;
+		cout << "[CIRCLE] ìž˜ëª»ëœ ìˆ˜ì¹˜ìž…ë‹ˆë‹¤."<< endl;
 		return false;
 	}
 	pos = position;

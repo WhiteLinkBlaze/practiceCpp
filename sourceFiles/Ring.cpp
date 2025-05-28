@@ -16,7 +16,7 @@ bool Ring::Init(Circle& inner, Circle& outer)
 		|| innerCirclePoint.GetX() - innerCircleRadius < outerCirclePoint.GetX() - outerCircleRadius
 		|| innerCirclePoint.GetY() - innerCircleRadius < outerCirclePoint.GetY() - outerCircleRadius)
 	{
-		cout << "[RING] Àß¸øµÈ À§Ä¡ÀÔ´Ï´Ù." << endl;
+		cout << "[RING] ìž˜ëª»ëœ ìˆ˜ì¹˜ìž…ë‹ˆë‹¤." << endl;
 		return false;
 	}
 

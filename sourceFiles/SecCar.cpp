@@ -1,7 +1,7 @@
 #include "header\\SecCar.h"
 
 #include <iostream>
-#include "Car.h"
+#include "header\\Car.h"
 using std::cout;
 using std::endl;
 
@@ -14,9 +14,9 @@ void SecCar::InitMembers(const char* ID, int fuel)
 }
 
 void SecCar::ShowCarState() {
-	cout << "¼ÒÀ¯ÀÚ ID: " << gamerID << endl;
-	cout << "¿¬·á·®: " << fuelGauge << "%" << endl;
-	cout << "ÇöÀç¼Óµµ: " << curSpeed << "km/s" << endl;
+	cout << "íšŒì› ID: " << gamerID << endl;
+	cout << "ì—°ë£ŒëŸ‰: " << fuelGauge << "%" << endl;
+	cout << "í˜„ìž¬ ì†ë„: " << curSpeed << "km/s" << endl;
 }
 void SecCar::Accel() {
 	if (fuelGauge <= 0) {

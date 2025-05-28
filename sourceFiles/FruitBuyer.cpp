@@ -13,16 +13,16 @@ void FruitBuyer::InitMembers(int money)
 void FruitBuyer::BuyApples(FruitSeller& seller, int money)
 {
 	if (money < 0) {
-		cout << "Àß¸øµÈ ±Ý¾×ÀÔ´Ï´Ù." << endl;
+		cout << "[FBUYER] ìž˜ëª»ëœ ìˆ˜ì¹˜ìž…ë‹ˆë‹¤." << endl;
 		return;
 	}
-	//message passing ¿¹½Ã
-	numOfApples += seller.SaleApples(money); // seller, »ç°ú 2000¿ø¾îÄ¡ ÁÖ¼¼¿ä
+	//message passing ï¿½ï¿½ï¿½ï¿½
+	numOfApples += seller.SaleApples(money); // seller, ë©”ì‹œì§€ íŒ¨ì‹±
 	myMoney -= money;
 }
 
 void FruitBuyer::ShowBuyResult()
 {
-	cout << "ÇöÀç ÀÜ¾×: "<<myMoney << endl;
-	cout << "»ç°ú °³¼ö: "<<numOfApples <<endl<< endl;
+	cout << "êµ¬ë§¤ìž ê¸ˆì•¡: "<<myMoney << endl;
+	cout << "ì‚¬ê³¼ ê°œìˆ˜: "<<numOfApples <<endl<< endl;
 }

@@ -16,7 +16,7 @@ int FruitSeller::SaleApples(int money)
 {
 	if (money < 0)
 	{
-		cout << "Àß¸øµÈ ±Ý¾×ÀÔ´Ï´Ù." << endl;
+		cout << "[FSELLER] ìž˜ëª»ëœ ìˆ˜ì¹˜ìž…ë‹ˆë‹¤." << endl;
 		return 0;
 	}
 	int num = money / APPLE_PRICE;
@@ -27,6 +27,6 @@ int FruitSeller::SaleApples(int money)
 
 void FruitSeller::ShowSalesResult()
 {
-	cout << "³²Àº »ç°ú: " << numOfApples << endl;
-	cout << "»ç°ú °³¼ö: " << myMoney << endl << endl;
+	cout << "íŒë§¤ìž ì‚¬ê³¼ ê°œìˆ˜: " << numOfApples << endl;
+	cout << "íŒë§¤ìž ê¸ˆì•¡: " << myMoney << endl << endl;
 }

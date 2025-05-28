@@ -13,10 +13,10 @@ private:
 public:
 	bool InitMembers(int xpos, int ypos);
 	void ShowPosition() const;
-	int GetX() const;	// ¿¢¼¼½º ÇÔ¼ö
-	int GetY() const;	// ¿¢¼¼½º ÇÔ¼ö
-	bool SetX(int xpos);// ¿¢¼¼½º ÇÔ¼ö
-	bool SetY(int ypos);// ¿¢¼¼½º ÇÔ¼ö
+	int GetX() const;	// ì•¡ì„¸ìŠ¤ í•¨ìˆ˜
+	int GetY() const;	// ì•¡ì„¸ìŠ¤ í•¨ìˆ˜
+	bool SetX(int xpos);// ì•¡ì„¸ìŠ¤ í•¨ìˆ˜
+	bool SetY(int ypos);// ì•¡ì„¸ìŠ¤ í•¨ìˆ˜
 private:
 	bool validation(int pos)
 	{

@@ -7,7 +7,7 @@ using std::endl;
 bool Rectangle::InitMembers(const CPoint& ul, const CPoint& lr)
 {
 	if (ul.GetX() > lr.GetX() || lr.GetY() < ul.GetY()) {
-		cout << "Àß¸øµÈ À§Ä¡Á¤º¸ Àü´Ş" << endl;
+		cout << "[RECTANGLE] ì˜ëª»ëœ ìˆ˜ì¹˜ì…ë‹ˆë‹¤." << endl;
 		return false;
 	}
 	upLeft = ul;
@@ -16,8 +16,8 @@ bool Rectangle::InitMembers(const CPoint& ul, const CPoint& lr)
 }
 
 void Rectangle::ShowRecInfo() const {
-	cout << "ÁÂ »ó´Ü: "<<"[" << upLeft.GetX() << ", "
+	cout << "ì¢Œìƒë‹¨ : "<<"[" << upLeft.GetX() << ", "
 		<< upLeft.GetY() <<"]" << endl;
-	cout << "¿ì ÇÏ´Ü: " << "[" << lowRight.GetX() << ", "
+	cout << "ìš°í•˜ë‹¨: " << "[" << lowRight.GetX() << ", "
 		<< lowRight.GetY() << "]" << endl;
 }

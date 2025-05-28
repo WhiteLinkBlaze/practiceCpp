@@ -8,7 +8,7 @@ bool CPoint::InitMembers(int xpos, int ypos)
 {
     if (!validation(xpos) || !validation(ypos))
     {
-        cout << "¹þ¾î³­ ¹üÀ§ÀÇ °ª Àü´Þ" << endl;
+        cout << "[CPOINT] ìž˜ëª»ëœ ìˆ˜ì¹˜ìž…ë‹ˆë‹¤." << endl;
         return false;
     }
 
@@ -38,7 +38,7 @@ bool CPoint::SetX(int xpos)
 {
     if (!validation(xpos))
     {
-        cout << "¹þ¾î³­ ¹üÀ§ÀÇ °ª Àü´Þ" << endl;
+        cout << "[CPOINT] ìž˜ëª»ëœ ìˆ˜ì¹˜ìž…ë‹ˆë‹¤." << endl;
         return false;
     }
     x = xpos;
@@ -49,7 +49,7 @@ bool CPoint::SetY(int ypos)
 {
     if (!validation(ypos))
     {
-        cout << "¹þ¾î³­ ¹üÀ§ÀÇ °ª Àü´Þ" << endl;
+        cout << "[CPOINT] ìž˜ëª»ëœ ìˆ˜ì¹˜ìž…ë‹ˆë‹¤." << endl;
         return false;
     }
     y = ypos;

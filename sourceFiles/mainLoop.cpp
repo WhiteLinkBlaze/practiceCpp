@@ -42,9 +42,9 @@ void BuyerSellerMessagePassingFunction() {
 	buyer.InitMembers(5000);
 	buyer.BuyApples(seller, 2000);
 
-	cout << "°úÀÏ ÆÇ¸ÅÀÚ" << endl;
+	cout << "íŒë§¤ìž ì •ë³´" << endl;
 	seller.ShowSalesResult();
-	cout << "°úÀÏ ±¸¸ÅÀÚ" << endl;
+	cout << "êµ¬ë§¤ìž ì •ë³´" << endl;
 	buyer.ShowBuyResult();
 }
 //void RectangleTestFunction() {
@@ -57,21 +57,21 @@ void CPointRectangleTestFunction()
 {
 	CPoint pos1;
 	if (!pos1.InitMembers(-2, 4)) {
-		cout << "ÃÊ±âÈ­ ½ÇÆÐ" << endl;
+		cout << "ìž˜ëª»ëœ ìˆ˜ì¹˜ìž…ë‹ˆë‹¤." << endl;
 	}
 	if (!pos1.InitMembers(2, 4)) {
-		cout << "ÃÊ±âÈ­ ½ÇÆÐ" << endl;
+		cout << "ìž˜ëª»ëœ ìˆ˜ì¹˜ìž…ë‹ˆë‹¤." << endl;
 	}
 	CPoint pos2;
 	if (!pos2.InitMembers(5, 9)) {
-		cout << "ÃÊ±âÈ­ ½ÇÆÐ" << endl;
+		cout << "ìž˜ëª»ëœ ìˆ˜ì¹˜ìž…ë‹ˆë‹¤." << endl;
 	}
 
 	Rectangle rec;
 	if (!rec.InitMembers(pos2, pos1))
-		cout << "Á÷»ç°¢Çü ÃÊ±âÈ­ ½ÇÆÐ" << endl;
+		cout << "ìž˜ëª»ëœ ìˆ˜ì¹˜ìž…ë‹ˆë‹¤." << endl;
 	if (!rec.InitMembers(pos1, pos2))
-		cout << "Á÷»ç°¢Çü ÃÊ±âÈ­ ½ÇÆÐ" << endl;
+		cout << "ìž˜ëª»ëœ ìˆ˜ì¹˜ìž…ë‹ˆë‹¤." << endl;
 	rec.ShowRecInfo();
 }
 
@@ -82,9 +82,9 @@ void BuyerSellerMessagePassingFunctionTwo() {
 	buyer.InitMembers(5000);
 	buyer.BuyApples(seller, -1);
 
-	cout << "°úÀÏ ÆÇ¸ÅÀÚ" << endl;
+	cout << "íŒë§¤ìž ì •ë³´" << endl;
 	seller.ShowSalesResult();
-	cout << "°úÀÏ ±¸¸ÅÀÚ" << endl;
+	cout << "êµ¬ë§¤ìž ì •ë³´" << endl;
 	buyer.ShowBuyResult();
 }
 
