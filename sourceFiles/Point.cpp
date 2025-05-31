@@ -34,3 +34,13 @@ void Point::showPosition()
 {
 	std::cout << "[" << xpos<<", "<<ypos << "]" << std::endl;
 }
+
+void PointTestFunction() {
+	Point pos1 = { 12, 4 };
+	Point pos2 = { 20,30 };
+	pos1.MovePos(-7, 10);
+	pos1.showPosition();
+
+	pos1.AddPoint(pos2);
+	pos1.showPosition();
+}

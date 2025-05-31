@@ -126,6 +126,9 @@
     <Text Include="solvedProblem.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="sourceFiles\header\Account.h" />
+    <ClInclude Include="sourceFiles\header\NameCard.h" />
+    <ClInclude Include="sourceFiles\header\Person.h" />
     <ClInclude Include="sourceFiles\header\Calculator.h" />
     <ClInclude Include="sourceFiles\header\Car.h" />
     <ClInclude Include="sourceFiles\header\Circle.h" />
@@ -134,12 +137,13 @@
     <ClInclude Include="sourceFiles\header\FruitSeller.h" />
     <ClInclude Include="sourceFiles\header\Point.h" />
     <ClInclude Include="sourceFiles\header\Printer.h" />
-    <ClInclude Include="sourceFiles\header\ProblemOne.h" />
     <ClInclude Include="sourceFiles\header\Rectangle.h" />
     <ClInclude Include="sourceFiles\header\Ring.h" />
     <ClInclude Include="sourceFiles\header\SecCar.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="sourceFiles\NameCard.cpp" />
+    <ClCompile Include="sourceFiles\Person.cpp" />
     <ClCompile Include="sourceFiles\Calculator.cpp" />
     <ClCompile Include="sourceFiles\Car.cpp" />
     <ClCompile Include="sourceFiles\Circle.cpp" />

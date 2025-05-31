@@ -14,4 +14,4 @@ public:
 	double Mult(double, double);
 	void ShowOpCount();
 };
-
+void CalculatorTestFunction();

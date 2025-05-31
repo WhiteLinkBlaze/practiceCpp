@@ -47,3 +47,21 @@ void Ring::ShowRingInfo() const
 	outerCircle.ShowCircleInfo();
 
 }
+void RingTestFunction()
+{
+	Ring ring;
+	Circle one, two;
+	CPoint cpOne, cpTwo;
+	cpOne.InitMembers(1, 1);
+	cpTwo.InitMembers(2, 2);
+
+	one.InitMembers(cpOne, 4);
+	two.InitMembers(cpTwo, 9);
+
+	ring.Init(one, two);
+	ring.ShowRingInfo();
+
+	ring.Init(1, 1, 4, 2, 2, 9);
+	ring.ShowRingInfo();
+
+}

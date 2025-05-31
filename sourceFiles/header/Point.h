@@ -15,4 +15,6 @@ struct Point {
 	void AddPoint(const Point& pos);
 	void showPosition();
 };
+
+void PointTestFunction();
 #endif

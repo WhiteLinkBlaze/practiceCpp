@@ -4,6 +4,21 @@ using std::cout;
 using std::endl;
 
 
+CPoint::CPoint()
+{
+}
+
+CPoint::CPoint(const int& xpos, const int& ypos)
+{
+    if (!validation(xpos) || !validation(ypos))
+    {
+        cout << "[CPOINT] 올바르지 않은 값입니다." << endl;
+        return;
+    }
+    x = xpos;
+    y = ypos;
+}
+
 bool CPoint::InitMembers(int xpos, int ypos)
 {
     if (!validation(xpos) || !validation(ypos))
@@ -54,4 +69,10 @@ bool CPoint::SetY(int ypos)
     }
     y = ypos;
     return true;
+}
+
+bool CPoint::validation(int pos)
+{
+    if (pos >= MIN && pos <= MAX )return true;
+    return false;
 }

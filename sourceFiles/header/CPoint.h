@@ -11,6 +11,8 @@ private:
 	int x;
 	int y;
 public:
+	CPoint();
+	CPoint(const int& xpos, const int& ypos);
 	bool InitMembers(int xpos, int ypos);
 	void ShowPosition() const;
 	int GetX() const;	// 액세스 함수
@@ -18,11 +20,7 @@ public:
 	bool SetX(int xpos);// 액세스 함수
 	bool SetY(int ypos);// 액세스 함수
 private:
-	bool validation(int pos)
-	{
-		if (pos >= MIN && pos <= MAX)return true;
-		return false;
-	}
+	bool validation(int pos);
 };
 #endif
 

@@ -13,4 +13,5 @@ public:
 	bool Init(int oneX, int oneY, int oneR, int twoX, int twoY, int twoR);
 	void ShowRingInfo()const;
 };
+void RingTestFunction();
 #endif

@@ -4,6 +4,20 @@
 using std::cout;
 using std::endl;
 
+Circle::Circle()
+{
+}
+
+Circle::Circle(const int x, const int y, const int rad)
+	:pos(x,y),radius(rad)
+{
+	if (rad < 0) {
+		cout << "[CIRCLE] 올바르지 않은 값입니다." << endl;
+		radius = 0;
+		return;
+	}
+}
+
 bool Circle::InitMembers(const CPoint& position, int r)
 {
 	

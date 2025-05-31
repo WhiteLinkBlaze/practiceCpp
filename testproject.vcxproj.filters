@@ -42,9 +42,6 @@
     <ClInclude Include="sourceFiles\header\Printer.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
-    <ClInclude Include="sourceFiles\header\ProblemOne.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
     <ClInclude Include="sourceFiles\header\Rectangle.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
@@ -52,6 +49,15 @@
       <Filter>헤더 파일</Filter>
     </ClInclude>
     <ClInclude Include="sourceFiles\header\SecCar.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="sourceFiles\header\Person.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="sourceFiles\header\NameCard.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="sourceFiles\header\Account.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
   </ItemGroup>
@@ -90,6 +96,12 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="sourceFiles\SecCar.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="sourceFiles\Person.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="sourceFiles\NameCard.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

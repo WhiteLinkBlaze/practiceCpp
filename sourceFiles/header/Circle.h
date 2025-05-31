@@ -8,6 +8,8 @@ private:
 	CPoint pos;
 	int radius;
 public:
+	Circle();
+	Circle(const int x, const int y, const int rad);
 	bool InitMembers(const CPoint & position, int r);
 	void ShowCircleInfo() const;
 

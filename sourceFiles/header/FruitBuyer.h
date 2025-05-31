@@ -9,9 +9,11 @@ private:
 	int myMoney;
 	int numOfApples;
 public:
+	FruitBuyer(int money = 0);
 	void InitMembers(int money);
 	void BuyApples(FruitSeller& seller, int money);
 	void ShowBuyResult();
 };
-
+void BuyerSellerMessagePassingFunction();
+void BuyerSellerMessagePassingFunctionTwo();
 #endif // !__BUYER__
