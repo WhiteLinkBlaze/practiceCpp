@@ -60,6 +60,9 @@
     <ClInclude Include="sourceFiles\header\Account.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="sourceFiles\header\Bank.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="sourceFiles\Calculator.cpp">
@@ -102,6 +105,12 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="sourceFiles\NameCard.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="sourceFiles\Bank.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="sourceFiles\Account.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

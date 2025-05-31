@@ -25,25 +25,11 @@ NameCard::NameCard(const char* myName, const char* myCompanyName, const char* my
 void NameCard::ShowNameCardInfo()
 {
 	const char* cTempPtr = NULL;
-	switch (rank)
-	{
-	case COMP_POS::ASSIST:
-		cTempPtr = "대리";
-		break;
-	case COMP_POS::CLERK:
-		cTempPtr = "사원";
-		break;
-	case COMP_POS::MANAGER:
-		cTempPtr = "과장";
-		break;
-	case COMP_POS::SENIOR:
-		cTempPtr = "주임";
-		break;
-	}
+	
 	cout << "이름: " << name << endl;
 	cout << "회사: " << companyName << endl;
 	cout << "전화번호: " << telephone << endl;
-	cout << "직급: " <<cTempPtr<< endl;
+	cout << "직급: ";COMP_POS::ShowPositionInfo(rank);
 }
 
 NameCard::~NameCard()

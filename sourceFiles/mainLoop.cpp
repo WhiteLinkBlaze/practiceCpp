@@ -1,13 +1,11 @@
 
 #pragma warning(disable:4996)
 #include <iostream>
-#include "header/Person.h"
+#include "header/Bank.h"
 
 using namespace std;
 
 int main() {
-	objArrayTestFunction();
-
-	objPtrArrayTestFunction();
+	bankTestFunctionLoop();
 	return 0;
 }

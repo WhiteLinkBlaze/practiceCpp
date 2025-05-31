@@ -127,6 +127,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="sourceFiles\header\Account.h" />
+    <ClInclude Include="sourceFiles\header\Bank.h" />
     <ClInclude Include="sourceFiles\header\NameCard.h" />
     <ClInclude Include="sourceFiles\header\Person.h" />
     <ClInclude Include="sourceFiles\header\Calculator.h" />
@@ -142,6 +143,8 @@
     <ClInclude Include="sourceFiles\header\SecCar.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="sourceFiles\Account.cpp" />
+    <ClCompile Include="sourceFiles\Bank.cpp" />
     <ClCompile Include="sourceFiles\NameCard.cpp" />
     <ClCompile Include="sourceFiles\Person.cpp" />
     <ClCompile Include="sourceFiles\Calculator.cpp" />

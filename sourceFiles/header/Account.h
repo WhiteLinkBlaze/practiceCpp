@@ -8,9 +8,11 @@ private:
 	int balance;	//잔액
 	char* cusName;	//고객 이름
 public:
+	Account();
 	Account(int ID, int money,const char* name);
 	int GetAccID();
 	void Deposit(int money);
+	int Withdraw(int money);
 	void ShowAccInfo();
 	~Account();
 };
