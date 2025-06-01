@@ -1,11 +1,11 @@
 
 #pragma warning(disable:4996)
 #include <iostream>
-#include "header/Bank.h"
+#include "header/CopyConstructor.h"
 
 using namespace std;
 
 int main() {
-	bankTestFunctionLoop();
+	CopyConstructorTestFunction();
 	return 0;
 }

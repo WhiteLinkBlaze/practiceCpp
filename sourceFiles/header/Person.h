@@ -9,6 +9,7 @@ private:
 	int age;
 public:
 	Person();
+	Person(const Person& p1);				//복사 생성자 정의
 	Person(const char* myname, int myage);
 	void ShowPersonInfo()const;
 	void SetPersonInfo(const char* myname, int myage);
@@ -18,4 +19,5 @@ public:
 void personClassTestFunction();
 void objArrayTestFunction();
 void objPtrArrayTestFunction();
+void shallowCopyTestFunction();
 #endif

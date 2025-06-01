@@ -12,6 +12,14 @@ Person::Person()
 	age = 0;
 }
 
+Person::Person(const Person& p1)
+	:age(p1.age)
+{
+	int len = strlen(p1.name) + 1;
+	name = new char[len];
+	strcpy_s(name, len, p1.name);
+}
+
 Person::Person(const char* myname, int myage)
 {
 	int len = strlen(myname) + 1;
@@ -56,7 +64,6 @@ void objArrayTestFunction()
 {
 	Person parr[3];
 	char nameStr[100];
-	char* strPtr;
 	int age;
 	
 	for (int i = 0; i < 3; i++)
@@ -76,7 +83,6 @@ void objPtrArrayTestFunction()
 {
 	Person *parr[3];
 	char nameStr[100];
-	char* strPtr;
 	int age;
 
 	for (int i = 0; i < 3; i++)
@@ -94,4 +100,13 @@ void objPtrArrayTestFunction()
 	delete parr[0];
 	delete parr[1];
 	delete parr[2];
+}
+
+void shallowCopyTestFunction()
+{
+	//복사 생성자 미정의시 오류 잡혀야 정상
+	Person man1("Lee", 29);
+	Person man2 = man1;
+	man1.ShowPersonInfo();
+	man2.ShowPersonInfo();
 }

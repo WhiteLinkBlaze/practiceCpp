@@ -9,6 +9,7 @@ private:
 	char* cusName;	//고객 이름
 public:
 	Account();
+	Account(Account& ref);
 	Account(int ID, int money,const char* name);
 	int GetAccID();
 	void Deposit(int money);

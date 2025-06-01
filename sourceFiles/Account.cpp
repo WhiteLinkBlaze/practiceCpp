@@ -10,6 +10,13 @@ Account::Account()
 {
 }
 
+Account::Account(Account& ref): accID(ref.accID), balance(ref.balance)
+{
+	int len = strlen(ref.cusName) + 1;
+	cusName = new char[len];
+	strcpy_s(cusName, len, ref.cusName);
+}
+
 Account::Account(int ID, int money, const char* name)
 	:accID(ID), balance(money)
 {
