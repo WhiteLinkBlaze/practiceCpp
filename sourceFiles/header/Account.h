@@ -11,10 +11,10 @@ public:
 	Account();
 	Account(Account& ref);
 	Account(int ID, int money,const char* name);
-	int GetAccID();
+	int GetAccID() const;
 	void Deposit(int money);
 	int Withdraw(int money);
-	void ShowAccInfo();
+	void ShowAccInfo() const;
 	~Account();
 };
 #endif

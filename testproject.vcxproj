@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -128,7 +128,10 @@
   <ItemGroup>
     <ClInclude Include="sourceFiles\header\Account.h" />
     <ClInclude Include="sourceFiles\header\Bank.h" />
+    <ClInclude Include="sourceFiles\header\CarInheri.h" />
     <ClInclude Include="sourceFiles\header\CopyConstructor.h" />
+    <ClInclude Include="sourceFiles\header\Mutable.h" />
+    <ClInclude Include="sourceFiles\header\MyFriend.h" />
     <ClInclude Include="sourceFiles\header\NameCard.h" />
     <ClInclude Include="sourceFiles\header\Person.h" />
     <ClInclude Include="sourceFiles\header\Calculator.h" />
@@ -146,8 +149,15 @@
   <ItemGroup>
     <ClCompile Include="sourceFiles\Account.cpp" />
     <ClCompile Include="sourceFiles\Bank.cpp" />
+    <ClCompile Include="sourceFiles\CarInheri.cpp" />
     <ClCompile Include="sourceFiles\CopyConstructor.cpp" />
+    <ClCompile Include="sourceFiles\FriendTest.cpp" />
+    <ClCompile Include="sourceFiles\header\FriendTest.h" />
+    <ClCompile Include="sourceFiles\header\NeedGlobal.h" />
+    <ClCompile Include="sourceFiles\Mutable.cpp" />
+    <ClCompile Include="sourceFiles\MyFriend.cpp" />
     <ClCompile Include="sourceFiles\NameCard.cpp" />
+    <ClCompile Include="sourceFiles\NeedGlobal.cpp" />
     <ClCompile Include="sourceFiles\Person.cpp" />
     <ClCompile Include="sourceFiles\Calculator.cpp" />
     <ClCompile Include="sourceFiles\Car.cpp" />

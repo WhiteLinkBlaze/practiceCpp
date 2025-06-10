@@ -1,11 +1,9 @@
-
 #pragma warning(disable:4996)
 #include <iostream>
-#include "header/CopyConstructor.h"
-
+#include"header/MyFriend.h"
 using namespace std;
 
 int main() {
-	CopyConstructorTestFunction();
+	myFriendTestFunction();
 	return 0;
 }

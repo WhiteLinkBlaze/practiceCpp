@@ -25,7 +25,7 @@ Account::Account(int ID, int money, const char* name)
 	strcpy_s(cusName, len, name);
 }
 
-int Account::GetAccID()
+int Account::GetAccID() const
 {
 	return accID;
 }
@@ -51,7 +51,7 @@ int Account::Withdraw(int money)
 	return money;
 }
 
-void Account::ShowAccInfo()
+void Account::ShowAccInfo() const
 {
 	cout << "계좌 번호: " << accID << endl;
 	cout << "잔액: " <<balance<< endl;

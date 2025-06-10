@@ -66,6 +66,15 @@
     <ClInclude Include="sourceFiles\header\CopyConstructor.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="sourceFiles\header\Mutable.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="sourceFiles\header\CarInheri.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="sourceFiles\header\MyFriend.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="sourceFiles\Calculator.cpp">
@@ -117,6 +126,27 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="sourceFiles\CopyConstructor.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="sourceFiles\header\FriendTest.h">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="sourceFiles\FriendTest.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="sourceFiles\header\NeedGlobal.h">
+      <Filter>헤더 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="sourceFiles\NeedGlobal.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="sourceFiles\Mutable.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="sourceFiles\CarInheri.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="sourceFiles\MyFriend.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
