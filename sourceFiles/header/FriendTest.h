@@ -1,5 +1,5 @@
 #ifndef __FRIENDTEST__
-#define __FRINEDTEST__
+#define __FRIENDTEST__
 #include <iostream>
 using std::cout;
 using std::endl;

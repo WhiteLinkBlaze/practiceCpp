@@ -1,4 +1,4 @@
-#include "header\\Printer.h"
+#include "header/Printer.h"
 #include <cstring>
 #include <iostream>
 using std::cout;
@@ -9,5 +9,5 @@ void Printer::SetString(const char* ccstr)
 		cout << ccstr << "is too long string" << endl;
 		return;
 	}
-	strcpy_s(str, ccstr);
+	strcpy(str, ccstr);
 }

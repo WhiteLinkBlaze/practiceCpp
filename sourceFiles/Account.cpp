@@ -14,7 +14,7 @@ Account::Account(Account& ref): accID(ref.accID), balance(ref.balance)
 {
 	int len = strlen(ref.cusName) + 1;
 	cusName = new char[len];
-	strcpy_s(cusName, len, ref.cusName);
+	strcpy(cusName, ref.cusName);
 }
 
 Account::Account(int ID, int money, const char* name)
@@ -22,7 +22,7 @@ Account::Account(int ID, int money, const char* name)
 {
 	int len = strlen(name) + 1;
 	cusName = new char[len];
-	strcpy_s(cusName, len, name);
+	strcpy(cusName, name);
 }
 
 int Account::GetAccID() const

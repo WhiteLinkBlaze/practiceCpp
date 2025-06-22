@@ -10,30 +10,30 @@ NameCard::NameCard(const NameCard& copy)
 {
 	size_t nameLen = strlen(copy.name) + 1;
 	name = new char[nameLen];
-	strcpy_s(name, nameLen, copy.name);
+	strcpy(name, copy.name);
 
 	size_t companyLen = strlen(copy.companyName) + 1;
 	companyName = new char[companyLen];
-	strcpy_s(companyName, companyLen, copy.companyName);
+	strcpy(companyName, copy.companyName);
 
 	size_t phoneNumberLen = strlen(copy.telephone) + 1;
 	telephone = new char[phoneNumberLen];
-	strcpy_s(telephone, phoneNumberLen, copy.telephone);
+	strcpy(telephone, copy.telephone);
 }
 
 NameCard::NameCard(const char* myName, const char* myCompanyName, const char* myPhoneNumber, const int myRank)
 {
 	size_t nameLen = strlen(myName) + 1;
 	name = new char[nameLen];
-	strcpy_s(name, nameLen, myName);
+	strcpy(name, myName);
 
 	size_t companyLen = strlen(myCompanyName) + 1;
 	companyName = new char[companyLen];
-	strcpy_s(companyName, companyLen, myCompanyName);
+	strcpy(companyName, myCompanyName);
 
 	size_t phoneNumberLen = strlen(myPhoneNumber) + 1;
 	telephone = new char[phoneNumberLen];
-	strcpy_s(telephone, phoneNumberLen, myPhoneNumber);
+	strcpy(telephone, myPhoneNumber);
 
 	rank = myRank;
 }

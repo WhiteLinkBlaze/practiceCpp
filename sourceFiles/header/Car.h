@@ -18,4 +18,4 @@ struct Car {
 	void Accel();
 	void Break();
 };
-#endif __CAR__
+#endif

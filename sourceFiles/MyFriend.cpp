@@ -13,7 +13,7 @@ MyFriendInfo::MyFriendInfo(const char* myname, int myage)
 	name = (char*)malloc(len * sizeof(char));
 	if (name == NULL)return;
 	memset(name, 0, len * sizeof(char));
-	strcpy_s(name, len, myname);
+	strcpy(name, myname);
 }
 
 void MyFriendInfo::ShowMyFriendInfo()
@@ -38,9 +38,9 @@ MyFriendDetailInfo::MyFriendDetailInfo(const char* myname, int myage,const char*
 	phone = (char*)malloc(phoneLen * sizeof(char));
 	if (addr == NULL || phone == NULL) return;
 	memset(addr, 0, addrLen * sizeof(char));
-	strcpy_s(addr, addrLen, myaddr);
+	strcpy(addr, myaddr);
 	memset(phone, 0, phoneLen * sizeof(char));
-	strcpy_s(phone, phoneLen, myphone);
+	strcpy(phone, myphone);
 }
 
 void MyFriendDetailInfo::ShowMyFriendDetatilInfo()

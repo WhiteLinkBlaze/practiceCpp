@@ -1,14 +1,14 @@
-#include "header\\SecCar.h"
+#include "header/SecCar.h"
 
 #include <iostream>
-#include "header\\Car.h"
+#include "header/Car.h"
 using std::cout;
 using std::endl;
 
 
 void SecCar::InitMembers(const char* ID, int fuel)
 {
-	strcpy_s(gamerID, ID);
+	strcpy(gamerID, ID);
 	fuelGauge = fuel;
 	curSpeed = 0;
 }

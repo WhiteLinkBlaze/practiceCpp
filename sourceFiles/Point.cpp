@@ -4,7 +4,7 @@
 #define iost 0
 #include <iostream>
 #endif
-#include "header\\Point.h"
+#include "header/Point.h"
 
 void Point::MovePos(int x, int y)
 {

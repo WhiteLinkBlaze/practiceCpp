@@ -1,4 +1,4 @@
-#include "header\\Person.h"
+#include "header/Person.h"
 #include <cstring>
 #include <iostream>
 
@@ -17,14 +17,14 @@ Person::Person(const Person& p1)
 {
 	int len = strlen(p1.name) + 1;
 	name = new char[len];
-	strcpy_s(name, len, p1.name);
+	strcpy(name, p1.name);
 }
 
 Person::Person(const char* myname, int myage)
 {
 	int len = strlen(myname) + 1;
 	name = new char[len];
-	strcpy_s(name, len, myname);
+	strcpy(name, myname);
 	age = myage;
 }
 
@@ -42,7 +42,7 @@ void Person::SetPersonInfo(const char* myname, int myage)
 	}
 	int len = strlen(myname) + 1;
 	name = new char[len];
-	strcpy_s(name, len, myname);
+	strcpy(name, myname);
 	age = myage;
 }
 

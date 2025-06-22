@@ -1,6 +1,6 @@
 
 #include <iostream>
-#include "header\\Calculator.h"
+#include "header/Calculator.h"
 #include "header/Printer.h"
 using std::cout;
 using std::endl;
