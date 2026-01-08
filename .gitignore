@@ -363,3 +363,6 @@ MigrationBackup/
 FodyWeavers.xsd
 
 .vscode/
+
+sourceFiles/mainLoop
+sourceFiles/mainLoop.cpp
