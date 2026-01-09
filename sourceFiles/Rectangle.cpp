@@ -52,3 +52,14 @@ void CPointRectangleTestFunction()
 		cout << "잘못된 수치입니다." << endl;
 	rec.ShowRecInfo();
 }
+void Rectangle::ShowAreaInfo() const {
+	int width = lowRight.GetX() - upLeft.GetX();
+	int height = lowRight.GetY() - upLeft.GetY();
+	if (width < 0)
+		width = -width;
+	if (height < 0) {
+		height = -height;
+	}
+	int area = width * height;
+	cout << "가로: " << width << ", 세로: " << height << ", 면적: " << area << endl;
+}
