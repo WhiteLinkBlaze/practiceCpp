@@ -1,4 +1,6 @@
 #include "header/Account.h"
+#include "header/NormalAccount.h"
+#include "header/HighCreditAccount.h"
 #include <iostream>
 #include <cstring>
 #include <cstdlib>
@@ -82,18 +84,73 @@ void AccountHandler::ShowMenu() const
 }
 void AccountHandler::MakeAccount()
 {
+	int choice;
+	cout<<"[계좌 종류 선택]" << endl;
+	cout<<"1. 보통 계좌 2. 신용 계좌"<<endl;
+	cout<<"선택: ";
+	cin>>choice;
+	if(choice==BANK_SYSTEM::NORMAL)
+		NormalMakeAccount();
+	else if(choice==BANK_SYSTEM::CREDIT)
+		CreditMakeAccount();
+	else
+		cout<<"유효하지 않은 선택입니다."<<endl;
+}
+void AccountHandler::NormalMakeAccount()
+{
 	int id;
 	char name[100];
 	int balance = 0;
-	cout << "[계좌 개설]" << endl;
+	int interestRate = 0;
+	cout << "[보통 계좌 개설]" << endl;
 	cout << "계좌 ID: ";
 	cin >> id;
 	cout << "이름: ";
 	cin >> name;
 	cout << "입금액: ";
 	cin >> balance;
-	accArr[accNum++] = new Account(id, balance, name);
+	cout << "이자율: ";
+	cin >> interestRate;
+	accArr[accNum++] = new NormalAccount(id, balance, name, interestRate);
 }
+void AccountHandler::CreditMakeAccount()
+{
+	int id;
+	char name[100];
+	int balance = 0;
+	int interestRate = 0;
+	int creditLevel = 0;
+	cout << "[신용 계좌 개설]" << endl;
+	cout << "계좌 ID: ";
+	cin >> id;
+	cout << "이름: ";
+	cin >> name;
+	cout << "입금액: ";
+	cin >> balance;
+	cout << "이자율: ";
+	cin >> interestRate;
+	cout << "신용 등급 (1. LEVEL_A / 2. LEVEL_B / 3. LEVEL_C): ";
+	int levelChoice;
+	cin >> levelChoice;
+	switch (levelChoice)
+	{
+	case 1:
+		creditLevel = BANK_SYSTEM::LEVEL_A;
+		break;
+	case 2:
+		creditLevel = BANK_SYSTEM::LEVEL_B;
+		break;
+	case 3:
+		creditLevel = BANK_SYSTEM::LEVEL_C;
+		break;
+	default:
+		cout << "유효하지 않은 선택입니다. LEVEL_C로 설정됩니다." << endl;
+		creditLevel = BANK_SYSTEM::LEVEL_C;
+		break;
+	}
+	accArr[accNum++] = new HighCreditAccount(id, balance, name, interestRate, creditLevel);
+}
+
 void AccountHandler::DepositMoney()
 {
 	int id;
@@ -155,12 +212,14 @@ void AccountLoop()
 {
 	AccountHandler manager;
 	int choice;
+	system("clear");
 	while (true)
 	{
 		manager.ShowMenu();
 		cout << "선택: ";
 		cin >> choice;
 		cout << endl;
+		system("clear");
 		switch (choice)
 		{
 		case BANK_SYSTEM::MAKE:
@@ -180,6 +239,7 @@ void AccountLoop()
 		default:
 			cout << "유효하지 않은 선택입니다." << endl;
 		}
+		getchar();
 		getchar();
 		system("clear");
 	}
