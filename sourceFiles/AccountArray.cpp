@@ -1,5 +1,5 @@
-#include "AccountArray.h"
-#include "BankingCommonDec.h"
+#include "header/AccountArray.h"
+#include "header/BankingCommonDec.h"
 
 
 BoundCheckPointPtrArray::BoundCheckPointPtrArray(const BoundCheckPointPtrArray& arr)

@@ -1,10 +1,8 @@
 #include "header/Account.h"
 #include "header/NormalAccount.h"
 #include "header/HighCreditAccount.h"
-#include <iostream>
-#include <cstring>
 #include <cstdlib>
-
+using MY_STRING::String;
 using std::cout;
 using std::endl;
 using std::cin;
@@ -16,17 +14,13 @@ Account::Account()
 
 Account::Account(Account& ref): accID(ref.accID), balance(ref.balance)
 {
-	int len = strlen(ref.cusName) + 1;
-	cusName = new char[len];
-	strcpy(cusName, ref.cusName);
+	cusName = ref.cusName;
 }
 
-Account::Account(int ID, int money, const char* name)
+Account::Account(int ID, int money, const String name)
 	:accID(ID), balance(money)
 {
-	int len = strlen(name) + 1;
-	cusName = new char[len];
-	strcpy(cusName, name);
+	cusName = String(name);
 }
 Account& Account::operator=(const Account& ref)
 {
@@ -34,10 +28,7 @@ Account& Account::operator=(const Account& ref)
 		return *this;
 	accID = ref.accID;
 	balance = ref.balance;
-	delete[] cusName;
-	int len = strlen(ref.cusName) + 1;
-	cusName = new char[len];
-	strcpy(cusName, ref.cusName);
+	cusName = ref.cusName;
 	return *this;
 }
 int Account::GetAccID() const
@@ -77,5 +68,4 @@ Account::~Account()
 {
 	cout << "삭제합니다." << endl;
 	ShowAccInfo();
-	delete cusName;
 }

@@ -3,6 +3,9 @@
 #include "header/BankingCommonDec.h"
 #include "header/NormalAccount.h"
 #include "header/HighCreditAccount.h"
+#include "header/MyString.h"
+
+using MY_STRING::String;
 
 AccountHandler::AccountHandler()
 	:accNum(0)
@@ -35,7 +38,7 @@ void AccountHandler::MakeAccount()
 void AccountHandler::NormalMakeAccount()
 {
 	int id;
-	char name[100];
+	String name;
 	int balance = 0;
 	int interestRate = 0;
 	cout << "[보통 계좌 개설]" << endl;
@@ -52,7 +55,7 @@ void AccountHandler::NormalMakeAccount()
 void AccountHandler::CreditMakeAccount()
 {
 	int id;
-	char name[100];
+	String name;
 	int balance = 0;
 	int interestRate = 0;
 	int creditLevel = 0;

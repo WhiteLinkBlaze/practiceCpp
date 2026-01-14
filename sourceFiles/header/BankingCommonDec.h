@@ -1,9 +1,11 @@
 #ifndef __BANKING_COMMON_DEC_H__
 #define __BANKING_COMMON_DEC_H__
 #include <iostream>
+#include <iosfwd>
 #include <cstring>
 
-using std::cout, std::endl, std::cin;
+//using std::cout, std::endl, std::cin;
+using namespace std;
 
 namespace BANK_SYSTEM
 {
