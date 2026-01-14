@@ -12,6 +12,7 @@ public:
 	Account();
 	Account(Account& ref);
 	Account(int ID, int money, const char* name);
+	Account& operator=(const Account& ref);
 	int GetAccID() const;
 	virtual void Deposit(int money);//입금
 	virtual int Withdraw(int money);//출금

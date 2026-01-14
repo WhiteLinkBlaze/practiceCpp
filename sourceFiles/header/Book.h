@@ -8,7 +8,9 @@ private:
     int price;
 public:
     Book(const char * t, const char * i, int p);
+    Book(const Book& b);
     ~Book();
     void ShowBookInfo() const;
+    Book& operator=(const Book& b);
 };
 #endif

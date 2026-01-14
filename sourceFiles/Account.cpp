@@ -28,7 +28,18 @@ Account::Account(int ID, int money, const char* name)
 	cusName = new char[len];
 	strcpy(cusName, name);
 }
-
+Account& Account::operator=(const Account& ref)
+{
+	if(this == &ref)
+		return *this;
+	accID = ref.accID;
+	balance = ref.balance;
+	delete[] cusName;
+	int len = strlen(ref.cusName) + 1;
+	cusName = new char[len];
+	strcpy(cusName, ref.cusName);
+	return *this;
+}
 int Account::GetAccID() const
 {
 	return accID;
