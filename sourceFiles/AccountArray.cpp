@@ -5,8 +5,8 @@
 BoundCheckPointPtrArray::BoundCheckPointPtrArray(const BoundCheckPointPtrArray& arr)
 {}
 BoundCheckPointPtrArray& BoundCheckPointPtrArray::operator=(const BoundCheckPointPtrArray& arr)
-{}
-
+{ return *this;}
+    
 BoundCheckPointPtrArray::BoundCheckPointPtrArray(int len)
 :arrlen(len)
 {
