@@ -97,18 +97,28 @@ void AccountHandler::DepositMoney()
 	cout << "[입금]" << endl;
 	cout << "계좌 ID: ";
 	cin >> id;
-	cout << "입금액: ";
-	cin >> money;
-	for (int i = 0; i < accNum; i++)
+	while(1)
 	{
-		if (accArr[i]->GetAccID() == id)
+		try
 		{
-			accArr[i]->Deposit(money);
-			cout << "입금 완료" << endl;
-			return;
+			cout << "입금액: ";
+			cin >> money;
+			for (int i = 0; i < accNum; i++)
+			{
+				if (accArr[i]->GetAccID() == id)
+				{
+					accArr[i]->Deposit(money);
+					cout << "입금 완료" << endl;
+					return;
+				}
+			}
+			cout << "유효하지 않은 ID입니다." << endl;
 		}
-	}
-	cout << "유효하지 않은 ID입니다." << endl;
+		catch(const MinusException e)
+		{
+			e.ShowExceptionReason();
+		}
+	}	
 }
 void AccountHandler::WithdrawMoney()
 {
@@ -117,18 +127,33 @@ void AccountHandler::WithdrawMoney()
 	cout << "[출금]" << endl;
 	cout << "계좌 ID: ";
 	cin >> id;
-	cout << "출금액: ";
-	cin >> money;
-	for (int i = 0; i < accNum; i++)
+	while(1)
 	{
-		if (accArr[i]->GetAccID() == id)
+		try
 		{
-			accArr[i]->Withdraw(money);
-			cout << "출금 완료" << endl;
+			cout << "출금액: ";
+			cin >> money;
+			for (int i = 0; i < accNum; i++)
+			{
+				if (accArr[i]->GetAccID() == id)
+				{
+					accArr[i]->Withdraw(money);
+					cout << "출금 완료" << endl;
+					return;
+				}
+			}
+			cout << "유효하지 않은 ID입니다." << endl;
 			return;
 		}
+		catch(const MinusException e)
+		{
+			e.ShowExceptionReason();
+		}
+		catch(const IsuffException e)
+		{
+			e.ShowExceptionReason();
+		}
 	}
-		
 }
 void AccountHandler::ShowAllAccInfo() const
 {

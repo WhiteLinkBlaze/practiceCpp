@@ -2,6 +2,7 @@
 #ifndef __ACCOUNT_H__
 #define __ACCOUNT_H__
 #include "MyString.h"
+#include "AccountException.h"
 
 using MY_STRING::String;
 class Account
@@ -16,8 +17,8 @@ public:
 	Account(int ID, int money, const String name);
 	Account& operator=(const Account& ref);
 	int GetAccID() const;
-	virtual void Deposit(int money);//입금
-	virtual int Withdraw(int money);//출금
+	virtual void Deposit(int money); //입금
+	int Withdraw(int money); //출금
 	void ShowAccInfo() const;
 	~Account();
 };

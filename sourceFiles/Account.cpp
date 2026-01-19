@@ -41,7 +41,7 @@ void Account::Deposit(int money)
 	if (money <= 0)
 	{
 		cout << "[ACCOUNT]유효하지 않은 값입니다." << endl;
-		return;
+		throw MinusException(money);
 	}
 	balance += money;
 }
@@ -51,7 +51,12 @@ int Account::Withdraw(int money)
 	if (money > balance)
 	{
 		cout << "[ACCOUNT]유효하지 않은 값입니다." << endl;
-		return 0;
+		throw IsuffException(balance, money);
+	}
+	if(money <=0)
+	{
+		cout << "[ACCOUNT]유효하지 않은 값입니다." << endl;
+		throw MinusException(money);
 	}
 	balance -= money;
 	return money;

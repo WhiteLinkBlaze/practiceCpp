@@ -1,6 +1,7 @@
 #ifndef __HIGH_CREDIT_ACCOUNT_H__
 #define __HIGH_CREDIT_ACCOUNT_H__
 #include "NormalAccount.h"
+#include "AccountException.h"
 
 class HighCreditAccount : public NormalAccount
 {
@@ -11,6 +12,10 @@ public:
         : NormalAccount(ID, money, name, rate), creditLevel(level) {}
     virtual void Deposit(int money) override
     {
+        if(money <= 0)
+        {
+            throw MinusException(money);
+        }
         int interest = money * (creditLevel / 100.0);
         NormalAccount::Deposit(money + interest);
     }

@@ -1,6 +1,7 @@
 #ifndef __NORMAL_ACCOUNT_H__
 #define __NORMAL_ACCOUNT_H__
 #include "Account.h"
+#include "AccountException.h"
 
 class NormalAccount : public Account
 {
@@ -11,6 +12,10 @@ public:
         : Account(ID, money, name), interestRate(rate) {}
     virtual void Deposit(int money) override
     {
+        if(money <= 0)
+        {
+            throw MinusException(money);
+        }
         int interest = money * (interestRate / 100.0);
         Account::Deposit(money + interest);
     }
